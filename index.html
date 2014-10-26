@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+
+<head>
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+	<script src="/javascripts/bootstrap.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var sideNavOpen = true;
+			$(".sidenav-ctrl").click(function(){
+				if(sideNavOpen)
+					$("#sideNav").animate({marginLeft:"-300px"});
+				else
+					$("#sideNav").animate({marginLeft:"0px"});
+				sideNavOpen = !sideNavOpen;
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+		<header class="container-fluid">
+			<span class="navbar-brand pull-left">TRS</span>				
+		</header>
+	</nav>
+	<button class="btn expand-button sidenav-ctrl" > <span class="glyphicon glyphicon-chevron-right"></span></button>
+	
+	<aside id="sideNav">
+		<button class="btn sidenav-ctrl" id="butt"> <span class="glyphicon glyphicon-chevron-left"></span></button>
+		<div class="side-menu">
+			<div class="side-menu-item list-group-item">
+				<div class="side-menu-item-heading">Timesheets</div>
+				<div class="side-menu-item-contents">
+					<ul>
+						<li>Complete Timesheets</li>
+						<li>Approve Timesheets</li>
+						<li>Search</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="side-menu-item list-group-item">
+				<div class="side-menu-item-heading">TRS Monthly Exceptions</div>			
+			</div>
+		
+			<div class="side-menu-item list-group-item">
+				<div class="side-menu-item-heading">TRS Hierarchy</div>
+				<div class="side-menu-item-contents">
+					<ul>
+						<li>Update Country Hierarchy</li>						
+					</ul>
+				</div>
+			</div>
+			
+			<div class="side-menu-item list-group-item">
+				<div class="side-menu-item-heading">Products</div>
+				<div class="side-menu-item-contents">
+					<ul>
+						<li>Search Products</li>						
+						<li>Search Products group</li>						
+						<li>Search Activity</li>
+						<li>Product Activity Mapping</li>						
+						<li>COO Contacts</li>						
+						<li>M&amp;A Products</li>						
+					</ul>
+				</div>
+			</div>
+			
+			<div class="side-menu-item list-group-item">
+				<div class="side-menu-item-heading">Weightings</div>
+				<div class="side-menu-item-contents">
+					<ul>
+						<li>Salary &amp; Bonus Weightings</li>						
+						<li>Populate Weightings from hierarchy code</li>					
+						<li>Populate Weightings from date range</li>						
+						<li>Business Type</li>						
+						<li>Map Weightings</li>
+						<li>Country Weightings</li>						
+						<li>Region Weightings</li>						
+					</ul>
+				</div>
+			</div>
+		
+			<div class="side-menu-item list-group-item">
+				<div class="side-menu-item-heading">TRS configurations</div>				
+			</div>
+			
+			<div class="side-menu-item list-group-item">
+				<div class="side-menu-item-heading">Client Vision</div>				
+			</div>
+			
+			<div class="side-menu-item list-group-item">
+				<div class="side-menu-item-heading">Deal Pipeline</div>				
+			</div>
+			
+			<div class="side-menu-item list-group-item">
+				<div class="side-menu-item-heading">GIRS</div>				
+			</div>
+			
+			<div class="side-menu-item list-group-item">
+				<div class="side-menu-item-heading">Help</div>				
+				<div class="side-menu-item-contents">
+					<ul>
+						<li>TRS Help Guide</li>						
+						<li>Product Descriptions</li>										
+					</ul>
+				</div>
+			</div>
+			
+			
+			<div class="side-menu-item list-group-item">
+				<div class="side-menu-item-heading">Contact Details</div>				
+			</div>
+			
+		</div>
+	</aside>
+
+
+</body>
+
+</html>

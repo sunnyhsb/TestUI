@@ -1,0 +1,62 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/layout";
+@import "compass/css3";
+
+@import "bootstrap.scss";
+
+
+
+$aside-base-color: #000;
+
+.expand-button {
+	margin-top:55px;
+}
+aside {
+	
+	width: 300px;
+	background:lighten($aside-base-color,15%);
+	position:fixed;
+	top:0px;
+	bottom:0px;
+	padding:5px;
+	padding-top:55px;
+}
+
+.accordion {
+	cursor: pointer;
+}
+
+.accordion-toggle {
+	color: lighten($aside-base-color,85%);
+	
+	
+}
+
+.accordion-toggle:hover {
+	color: lighten($aside-base-color,95%);
+	text-decoration: none;
+}
+
+.accordion-group {
+	border-top:solid 1px lighten($aside-base-color,25%);
+	box-shadow: inset 0 0 5px black;
+	background:lighten($aside-base-color,10%);
+	padding: 5px;
+	color: lighten($aside-base-color,90%);
+}
+
+.accordion-heading {
+	color:lighten($aside-base-color,90%);
+}
+
+.side-menu-item{
+	cursor: pointer;
+}
+.side-menu-item-contents {
+	display: none;
+}
